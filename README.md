@@ -64,7 +64,7 @@ Planned, not done yet. I'll link each one here when it's ready.
 *   **Familiar:** Java, JavaScript, C++
 *   **Learning:** Go, Rust
 *   **Security & Networking:** Nmap, Wireshark, Burp Suite, Hashcat, Metasploit
-*   **Systems & DevOps:** Linux (Ubuntu), Git, GNU Make, QEMU/KVM
+*   **Systems & DevOps:** Linux (Ubuntu/Kali), Git, GNU Make, QEMU/KVM
 *   **Web:** Django, React, Node.js, PostgreSQL, MySQL
 
 ---
