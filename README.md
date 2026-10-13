@@ -22,7 +22,9 @@ I learn best by building things and writing down what I learn, so most of my rep
 * **HTTP web server in C** (monolithic, no frameworks, no external libraries)
 - Raw sockets, TCP server with `fork()`-based concurrency ✅
 - HTTP request parser ✅
-- Logging, and HTTP Responses 🚧
+- Logging, and HTTP Responses ✅
+- Routers, URL decoding, mime and handlers✅
+- Frontend and Database 🚧
 - Next: `pthreads`, then an `epoll` event loop
 
 Repo: [tourneyd](https://github.com/D34D5H0T03/tourneyd)
@@ -61,7 +63,7 @@ Planned, not done yet. I'll link each one here when it's ready.
 ## 🧰 Languages & tools
 
 *   **Core:** C, Python
-*   **Familiar:** Java, JavaScript, C++
+*   **Familiar:** Java, JavaScript, C++, bash
 *   **Learning:** Go, Rust
 *   **Security & Networking:** Nmap, Wireshark, Burp Suite, Hashcat, Metasploit
 *   **Systems & DevOps:** Linux (Ubuntu/Kali), Git, GNU Make, QEMU/KVM
