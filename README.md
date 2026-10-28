@@ -12,6 +12,7 @@ I learn best by building things and writing down what I learn, so most of my rep
 
 ## 🏆 Featured Projects
 
+*   **tourneyd:** A zero-dependency HTTP/1.1 web server and CTF platform written from scratch in C on raw POSIX sockets. It implements a custom state-machine HTTP parser, `fork()`-based concurrency, embedded SQLite, and strict security hardening against request smuggling and resource exhaustion. See: [tourneyd](https://github.com/D34D5H0T03/tourneyd)
 *   **Custom C Shell:** A Linux command-line shell implementing `fork-exec` execution, I/O redirection, pipelines, and process masking. See: [custom-shell](https://github.com/D34D5H0T03/custom-shell)
 *   **algo-visualizer:** A JavaFX application built to animate sorting algorithms and graph traversal paths. See: [algo-visualizer](https://github.com/D34D5H0T03/algo-visualizer)
 
@@ -19,15 +20,8 @@ I learn best by building things and writing down what I learn, so most of my rep
 
 ## 🔨 Currently working on
 
-* **HTTP web server in C** (monolithic, no frameworks, no external libraries)
-- Raw sockets, TCP server with `fork()`-based concurrency ✅
-- HTTP request parser ✅
-- Logging, and HTTP Responses ✅
-- Routers, URL decoding, mime and handlers✅
-- Frontend and Database 🚧
-- Next: `pthreads`, then an `epoll` event loop
-
-Repo: [tourneyd](https://github.com/D34D5H0T03/tourneyd)
+- **Network Architecture & Protocols:** Deep-diving into the network layer and beyond by reading *Computer Networking: A Top-Down Approach* (Kurose & Ross), continuing from Chapter 4.
+- Applying theoretical networking concepts to prepare for building low-level network tools, such as manual packet sniffers and port scanners in C.
 
 ---
 
