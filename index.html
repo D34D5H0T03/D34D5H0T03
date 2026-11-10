@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Abdul Basit (D34D5H0T03) — Security Researcher, Systems Programmer, and Reverse Engineer specializing in low-level programming, exploit development, and fuzzing.">
+    <title>Abdul Basit — Security Researcher &amp; Systems Programmer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ═══════════════════ BACKGROUND OVERLAY ═══════════════════ -->
+    <div class="cyber-bg-overlay" aria-hidden="true"></div>
+
+    <!-- ═══════════════════ NAV ═══════════════════ -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="Home">
+                <span class="logo-bracket">[</span>D34D<span class="logo-accent">5H0T</span>03<span class="logo-bracket">]</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#ctf" class="nav-link">CTFs</a></li>
+                <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════ HERO ═══════════════════ -->
+    <section id="hero">
+        <div class="hero-bg-grid" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+            <div class="terminal-line">
+                <span class="prompt">basit@redteam:~$</span>
+                <span class="typed-text" id="typedText"></span>
+                <span class="cursor" aria-hidden="true">█</span>
+            </div>
+            <h1>Abdul Basit</h1>
+            <p class="hero-subtitle">Security Researcher &bull; Systems Programmer &bull; Reverse Engineer</p>
+            <p class="hero-desc">CSE undergrad from Bangladesh. Learning how computers work from the bottom up &mdash; with the long-term aim of working on program analysis, fuzzing, and vulnerability research.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="https://github.com/D34D5H0T03" class="btn btn-outline" target="_blank" rel="noopener">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+            <span>scroll</span>
+            <div class="scroll-line"></div>
+        </a>
+    </section>
+
+    <!-- ═══════════════════ ABOUT ═══════════════════ -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="title-accent">//</span> About Me</h2>
+            <div class="about-grid">
+                <div class="about-avatar reveal">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-ring" aria-hidden="true"></div>
+                        <img src="assets/profile_picture.png" alt="Abdul Basit (D34D5H0T03)" class="avatar-img" id="profileImg" onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='flex';">
+                        <div class="avatar-placeholder" id="avatarFallback" style="display: none;">
+                            <span>AB</span>
+                        </div>
+                        <div class="avatar-badge" title="Status: Online // Hunting vulnerabilities">
+                            <span class="badge-dot"></span> Online
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <p>I'm a Computer Science &amp; Engineering undergrad from Bangladesh with a deep passion for understanding how computers work from the ground up. My primary interests center around <strong>systems programming</strong>, <strong>reverse engineering</strong>, <strong>exploit development</strong>, and <strong>vulnerability research</strong>.</p>
+                    <p>I learn best by building things and documenting what I learn &mdash; most of my repositories consist of concrete implementations, hands-on lab notes, and deep book notes. My long-term roadmap focuses on <strong>program analysis and fuzzing</strong>, bridging low-level system internals with automated analysis techniques.</p>
+                    
+                    <div class="about-reading">
+                        <h3><span class="title-accent">📚</span> Currently Reading &amp; Lab Work</h3>
+                        <ul>
+                            <li>
+                                <em>Computer Networking: A Top-Down Approach</em> (Kurose &amp; Ross)
+                                <span class="reading-note">Networking foundations, wire protocols &amp; Wireshark labs</span>
+                            </li>
+                            <li>
+                                <em>Computer Systems: A Programmer's Perspective</em> (CS:APP)
+                                <span class="reading-note">Machine-level code, memory hierarchy &amp; binary analysis</span>
+                            </li>
+                            <li>
+                                <em>Operating Systems: Three Easy Pieces</em> (OSTEP)
+                                <span class="reading-note">Processes, virtual memory &amp; concurrency primitives</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ PROJECTS ═══════════════════ -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="title-accent">//</span> Featured Projects</h2>
+            <p class="section-subtitle reveal">Click any project card to open its repository and source code on GitHub.</p>
+            <div class="projects-grid">
+
+                <!-- Project 1: tourneyd -->
+                <a href="https://github.com/D34D5H0T03/tourneyd" class="project-card reveal" target="_blank" rel="noopener" aria-label="View tourneyd repository on GitHub">
+                    <div class="project-header">
+                        <div class="project-icon-wrapper">
+                            <svg class="project-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <span class="project-external-link" title="Open GitHub Repo">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </span>
+                    </div>
+                    <h3>tourneyd</h3>
+                    <p>A zero-dependency HTTP/1.1 web server and CTF platform written from scratch in C on raw POSIX sockets. Implements a custom state-machine HTTP parser, <code>fork()</code>-based concurrency, embedded SQLite, and strict security hardening against request smuggling and resource exhaustion.</p>
+                    <div class="project-tags">
+                        <span>C</span><span>POSIX</span><span>Sockets</span><span>HTTP/1.1</span><span>SQLite</span><span>Hardening</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-action">Explore Repository &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Project 2: Custom C Shell -->
+                <a href="https://github.com/D34D5H0T03/custom-shell" class="project-card reveal" target="_blank" rel="noopener" aria-label="View Custom C Shell repository on GitHub">
+                    <div class="project-header">
+                        <div class="project-icon-wrapper">
+                            <svg class="project-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                        </div>
+                        <span class="project-external-link" title="Open GitHub Repo">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </span>
+                    </div>
+                    <h3>Custom C Shell</h3>
+                    <p>A Linux command-line shell implementing <code>fork-exec</code> process execution, I/O redirection, multi-command pipelines, and process masking. Engineered to master low-level UNIX process management, signals, and descriptor manipulation.</p>
+                    <div class="project-tags">
+                        <span>C</span><span>Linux</span><span>POSIX</span><span>fork/exec</span><span>Pipelines</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-action">Explore Repository &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Project 3: algo-visualizer -->
+                <a href="https://github.com/D34D5H0T03/algo-visualizer" class="project-card reveal" target="_blank" rel="noopener" aria-label="View algo-visualizer repository on GitHub">
+                    <div class="project-header">
+                        <div class="project-icon-wrapper">
+                            <svg class="project-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                        </div>
+                        <span class="project-external-link" title="Open GitHub Repo">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </span>
+                    </div>
+                    <h3>algo-visualizer</h3>
+                    <p>An interactive desktop application built in JavaFX designed to animate complex sorting algorithms and graph traversal paths (BFS, DFS, Dijkstra). Provides step-by-step visual intuition into algorithm dynamics and state mutations.</p>
+                    <div class="project-tags">
+                        <span>Java</span><span>JavaFX</span><span>Data Structures</span><span>Algorithms</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-action">Explore Repository &rarr;</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ SKILLS ═══════════════════ -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="title-accent">//</span> Skills &amp; Arsenal</h2>
+            <div class="skills-grid">
+
+                <div class="skill-category reveal">
+                    <h3><span class="cat-icon">⚡</span> Core Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag primary">C</span>
+                        <span class="skill-tag primary">Python</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3><span class="cat-icon">🔧</span> Familiar</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Bash</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3><span class="cat-icon">📖</span> Learning &amp; Expanding</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag learning">Go</span>
+                        <span class="skill-tag learning">Rust</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3><span class="cat-icon">🔒</span> Security &amp; Networking</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag security">Nmap</span>
+                        <span class="skill-tag security">Wireshark</span>
+                        <span class="skill-tag security">Burp Suite</span>
+                        <span class="skill-tag security">Hashcat</span>
+                        <span class="skill-tag security">Metasploit</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3><span class="cat-icon">🖥️</span> Systems &amp; Environment</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Linux (Ubuntu / Kali)</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GNU Make</span>
+                        <span class="skill-tag">QEMU / KVM</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3><span class="cat-icon">🌐</span> Web &amp; Databases</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">SQLite</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ CTF ═══════════════════ -->
+    <section id="ctf" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="title-accent">//</span> CTFs &amp; Hands-on Security</h2>
+            <div class="ctf-grid">
+
+                <a href="https://pwn.college" class="ctf-card reveal" target="_blank" rel="noopener">
+                    <div class="ctf-icon">🏴</div>
+                    <h3>pwn.college</h3>
+                    <p>Finished Linux Luminarium; actively advancing through Computing 101 and Intro to Cybersecurity modules focusing on binary exploitation and memory safety.</p>
+                    <span class="ctf-link">Open Platform &rarr;</span>
+                </a>
+
+                <a href="https://overthewire.org" class="ctf-card reveal" target="_blank" rel="noopener">
+                    <div class="ctf-icon">⚔️</div>
+                    <h3>OverTheWire</h3>
+                    <p>Active participant solving security wargames to reinforce command-line proficiency, privilege escalation patterns, and binary analysis fundamentals.</p>
+                    <span class="ctf-link">Open Platform &rarr;</span>
+                </a>
+
+                <a href="https://picoctf.org" class="ctf-card reveal" target="_blank" rel="noopener">
+                    <div class="ctf-icon">🛡️</div>
+                    <h3>CyLab Security Academy</h3>
+                    <p>Engaging in security challenges (formerly picoCTF) covering reverse engineering, forensics, cryptography, and web exploitation.</p>
+                    <span class="ctf-link">Open Platform &rarr;</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ ROADMAP ═══════════════════ -->
+    <section id="roadmap" class="section">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="title-accent">//</span> Roadmap &amp; Pipeline</h2>
+            <p class="section-subtitle reveal">Active &amp; planned security projects. Each will be linked as soon as it is shipped.</p>
+            <div class="roadmap-list reveal">
+                <div class="roadmap-item">
+                    <div class="roadmap-status in-progress" title="Status: In Progress"></div>
+                    <div class="roadmap-content">
+                        <span class="roadmap-title">Packet sniffer in C</span>
+                        <span class="roadmap-desc">Raw sockets (<code>AF_PACKET</code>), manual Ethernet/IP/TCP header parsing &amp; packet inspection</span>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-status pending" title="Status: Planned"></div>
+                    <div class="roadmap-content">
+                        <span class="roadmap-title">Port scanner in C</span>
+                        <span class="roadmap-desc">TCP connect scan implementation, advancing to stealth raw SYN scanning</span>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-status pending" title="Status: Planned"></div>
+                    <div class="roadmap-content">
+                        <span class="roadmap-title">802.11 sniffer firmware on ESP32</span>
+                        <span class="roadmap-desc">Promiscuous mode Wi-Fi frame capture and beacon frame telemetry</span>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-status pending" title="Status: Planned"></div>
+                    <div class="roadmap-content">
+                        <span class="roadmap-title">CS:APP Lab writeups (Bomb, Attack)</span>
+                        <span class="roadmap-desc">GDB disassembly, stack-frame inspection &amp; ROP/buffer overflow exploitation writeups</span>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-status pending" title="Status: Planned"></div>
+                    <div class="roadmap-content">
+                        <span class="roadmap-title">Fuzzing harnesses for open-source parsers</span>
+                        <span class="roadmap-desc">Coverage-guided fuzzing targets using AFL++ and libFuzzer with ASan/UBSan</span>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-status pending" title="Status: Planned"></div>
+                    <div class="roadmap-content">
+                        <span class="roadmap-title">Go and Rust systems utilities</span>
+                        <span class="roadmap-desc">Modern memory-safe tooling for network reconnaissance and binary analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ CONTACT ═══════════════════ -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="title-accent">//</span> Get In Touch</h2>
+            <p class="contact-desc reveal">Interested in collaborating on systems programming, red teaming, security research, or just discussing low-level tech? Reach out below.</p>
+            <div class="contact-links">
+                <a href="mailto:abdulbasitraj03@gmail.com" class="contact-card reveal">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">abdulbasitraj03@gmail.com</span>
+                </a>
+                <a href="https://linkedin.com/in/abdul-basit-raj-0a1040415" class="contact-card reveal" target="_blank" rel="noopener">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">abdul-basit-raj</span>
+                </a>
+                <a href="https://github.com/D34D5H0T03" class="contact-card reveal" target="_blank" rel="noopener">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">@D34D5H0T03</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Abdul Basit (D34D5H0T03). Built with raw HTML, CSS &amp; vanilla JS &mdash; zero frameworks.</p>
+            <p class="footer-tagline"><span class="prompt">$</span> echo "Stay curious. Keep breaking &amp; building."</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
